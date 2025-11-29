@@ -1,3 +1,4 @@
+// E:\study\worker_inventory\worker_inventory_app\index.js
 import { registerRootComponent } from 'expo';
 
 import App from './App';
