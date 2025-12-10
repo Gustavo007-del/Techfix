@@ -1,35 +1,39 @@
 {
   "expo": {
-    "name": "worker_inventory_app",
-    "slug": "worker_inventory_app",
+    "name": "TEX FIX",
+    "slug": "techfix-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2C2C2C"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTabletMode": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#2C2C2C"
       },
-      "edgeToEdgeEnabled": true,
-      "package": "com.shijil.py.worker_inventory_app"
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "5419ae07-2de7-44aa-b46e-4978be365a08"
-      }
-    }
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermissions": "Allow TECHFIX to access your location for accurate check-in/check-out"
+        }
+      ]
+    ]
   }
 }
